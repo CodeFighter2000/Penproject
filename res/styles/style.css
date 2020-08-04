@@ -1,0 +1,293 @@
+/* Fonts */
+
+@font-face {
+    font-family: "PlayfairDisplay_Medium";
+    src: url("../fonts/playfair-font/PlayfairDisplayMedium-9YKZK.ttf") format("truetype");
+}
+@font-face {
+    font-family: "PlayfairDisplay_Bold";
+    src: url("../fonts/playfair-font/PlayfairDisplayBold-nRv8g.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Swansea";
+    src: url("../fonts/swansea-font/Swansea-q3pd.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Swansea_Bold";
+    src: url("../fonts/swansea-font/SwanseaBold-D0ox.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Swansea_Italic";
+    src: url("../fonts/swansea-font/SwanseaItalic-AwqD.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Swansea_BoldItalic";
+    src: url("../fonts/swansea-font/SwanseaBoldItalic-p3Dv.ttf") format("truetype");
+}
+
+/* General */
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    height: 100%;
+}
+
+body {
+    background-color: #16151d;
+    font-family: Swansea, Arial;
+    color: seashell;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    min-height: 35.2rem;
+}
+
+h1 {
+    font-family: "PlayfairDisplay_Bold";
+    font-size: 2rem;
+
+}
+
+h2 {
+    font-family: "PlayfairDisplay_Medium";
+    font-size: 1.33rem;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/* Header */
+
+header {
+    background-color: #0b0a0d;
+    height: 10%;
+}
+
+header .flex-container {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 1rem;
+}
+
+.logo img {
+    height: 100%;
+    width: 5rem;
+}
+
+
+nav {
+    width: 70%;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "PlayfairDisplay_Bold";
+    font-size: 1.66rem;
+    color: #694ba1;
+
+}
+
+.navul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+/* aside */
+
+aside {
+    background-color: #1f1d29;
+    float: right;
+    width: 15%;
+    margin: 5rem 0.8rem;
+    padding: 0.4rem;
+    
+}
+
+aside h2 {
+    padding: 0.2rem 0 0.5rem 0.2rem;
+    font-weight: bold;
+}
+
+aside a {
+    text-decoration: none;
+    color: #694ba1;
+}
+aside li {
+    margin-top: 0.4rem;
+    font-style: italic;
+}
+/* Section */
+
+section {
+    background-color: #1f1d29;
+    width: 65%;
+    min-height: 35.2rem;
+    margin: 0 auto;
+    padding: 0.6rem 0;
+}
+
+h1 {
+    padding: 1rem 2rem;
+}
+
+/* Article */
+
+article {
+    background-color: #0b0a0d;
+    margin: 2rem 0;
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+
+}
+
+article h2 {
+    margin: 0.2rem 0 0.4rem 0.8rem;
+}
+
+.artimg {
+    float: left;
+    border-radius: 20%;
+    height: 8rem;
+    width: 8rem;
+    margin: 1rem 0.6rem 0.3rem 0.6rem;
+}
+
+article p {
+    text-align: justify;
+    margin: 0.4rem 0;
+    text-indent: 1.2rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: #0b0a0d;
+    margin-top: auto;
+    width: 100%;
+  
+    
+}
+
+footer .flex-container {
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+footer figure {
+    margin: 1rem 0 0.5rem 0;
+}
+footer p {
+    margin: 0.5rem 0 1rem 0;
+}
+
+/* Guide */
+
+.guidecat {
+    background-color: #16151d;
+    margin: 2rem 0;
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+}
+
+.guideh {
+    margin: 0.4rem 0 0.6rem 0.8rem;
+}
+
+.guideul li {
+    margin-top: 0.4rem;
+    font-style: italic;
+}
+
+.guidecat a {
+    text-decoration: none;
+    color: #694ba1;
+}
+
+/* Guide */
+
+.evcat {
+    background-color: #16151d;
+    margin: 2rem 0;
+    width: 100%;
+    padding: 0.8rem 1.2rem;
+}
+
+.evh{
+    margin: 0.4rem 0 0.6rem 0.8rem;
+}
+
+.evul li {
+    margin-top: 0.4rem;
+    font-style: italic;
+}
+
+.evcat a {
+    text-decoration: none;
+    color: #694ba1;
+}
+
+/* Inscrieri */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+form input {
+    margin: 1rem;
+    padding-right: 1rem;
+}
+
+form textarea {
+    margin: 1rem;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    aside {
+
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav {
+        width: 100%;
+    }
+
+    .navul {
+        
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;             
+    }
+
+    .navul li {
+        padding: 0.3rem;
+    }
+
+    header .logo {
+        display: none;
+    }
+}

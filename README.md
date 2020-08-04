@@ -1,2 +1,0 @@
-# Penproject
- Project for codcademy
