@@ -290,4 +290,8 @@ form textarea {
     header .logo {
         display: none;
     }
+
+    section {
+        width: 100%;
+    }
 }
